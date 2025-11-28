@@ -1,0 +1,15 @@
+>Primer Forward Swap
+5'-------------------------------3'
+GGGAATTCCCATATGACCCAGCCGCTGGTTGGTA
+
+>Primer Reverse Swap
+5'------------------------------3'
+CCGCTCGAGTTCTTTTTCTTCGAAAACAGCGTC
+
+>Primer Forward RpoS
+5'-------------------------------3'
+GGGAATTCCCATATGAGCCAAAATACACTGAAAGTTCAT
+
+>Primer Reverse RpoS
+5'--------------------------3'
+CCGCTCGAGTCGCGGAACAGCGCTT

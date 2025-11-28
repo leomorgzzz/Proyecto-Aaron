@@ -1,0 +1,54 @@
+# Comentario, esta técnica necesita del genoma del organismo
+# se supone que mi universo si existe esta parte pero como es muy
+# complicado buscar un método correcto de predecir estos lugares simplemente
+# los inventaré pero hay que anotarlos porque se ocupa complementariedad entre ellos
+# por la técnica de Gibson Assembly -atte: Leo :p
+
+Upstream Fin Brazo L (Borde inicial de mi gen swap1)
+ATCGTTCGTAGCTAGC 
+
+Downstream Inicio Brazo R (Borde final de mi gen swap1 )
+GCTAGCTAGCATCGTA
+
+====================================================================================
+
+>Upstream_F (Secuencia genérica del genoma)
+5'------------------3'
+GCGTCCGGCGTAGAGGATCG
+
+>Upstream_R (Cola del cassete de resistencia en este caso Kanamicina) + (Borde Upstream)
+5'--------------------------3'
+CCGTTGAATATGGCTCAT-GCTAGCTACGAACGAT
+
+======================================================================================
+
+>KanR_F (Borde Upstream) + (Inicio del cassete de resistencia Kan)
+5'--------------------------------3'
+ATCGTTCGTAGCTAGC-ATGAGCCATATTCAACGG
+
+>KanR_R (Borde Downstream) + (Fin del cassete de resistencia)
+5'--------------------------------3'
+TACGATGCTAGCTAGC-TTAGAAAAACTCATCGAG
+
+=======================================================================================
+
+>Downstream_F (cola del cassete kan) + (borde downstream)
+5'--------------------------3'
+CTCGATGAGTTTTCTA-GCTAGCTAGCATCGTA
+
+>Downstream_R (Secuencia genérica del genoma)
+5'--------------------------3'
+CGCCAGCTTCACGCTGCCG
+
+========================================================================================
+
+# Importante estos siguientes primers se pegan 100pb antes (forward) y después (reverse)
+# para verificar el cambio de tamaño, por lo cual si... también son inventados.
+
+>Check_KO_F
+5'----------------3'
+TGCCGATTTCGGCCTATTG
+
+>Check_KO_R
+5'-----------------3'
+AAATCGGCGCATTTCTTAAC

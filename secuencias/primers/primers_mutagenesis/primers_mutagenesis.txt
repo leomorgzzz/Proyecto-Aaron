@@ -1,0 +1,7 @@
+>Primer forward swap
+5'------------------3'
+GATGAGGCTCTGGTTAAAATC
+
+>Primer reverse swap
+5'------------------3'
+GATTTTAACCAGAGCCTCATC

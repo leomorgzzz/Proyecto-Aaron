@@ -1,0 +1,167 @@
+Ficha de Organismos
+===================
+Organismo de Estudio:   Punpunyabacter commutabilis (Cepa N-01)
+Organismo de Referencia: Escherichia coli (Cepa K-12)
+Origen (Hipótesis):    Aislada de un biofilm cristalino en la Cueva de Naica (Chihuahua, MX), un ecosistema oligotrófico y de alta temperatura (58°C) aislado del microbioma superficial.
+
+---
+
+Ficha de Cultivo y Mantenimiento
+===============================
+
+                        E. coli (Referencia)                        P. commutabilis (Estudio)
+-------------------------------------------------------------------------------------------------------------------------
+Tipo de Metabolismo:    Mesófilo: Organismo que crece a               Termófilo: Organismo adaptado a
+                        temperaturas moderadas.                       temperaturas altas.
+                        Heterótrofo: Obtiene carbono de               Oligotrófico: Adaptado a vivir en
+                        fuentes orgánicas (ej. azúcares).             ambientes con muy baja concentración
+                                                                      de nutrientes.
+
+Medio de Cultivo:       Medio Rico (ej. Luria-Bertani, LB):           Medio Mínimo Mineral Definido (ej. M9-Naica):
+                        Un medio complejo y no definido, rico         Un medio definido que solo contiene sales
+                        en extracto de levadura y peptona.            minerales esenciales (ej. CaSO₄, MnSO₄)
+                                                                      y una única fuente de carbono en
+                                                                      micro-concentración.
+
+Temperatura Óptima:     37°C (Temperatura corporal humana).           58°C (Temperatura ambiente de la Cueva de Naica).
+
+Atmósfera:              Aerobio facultativo: Prefiere crecer          Microaerófilo: Requiere O₂, pero a
+                        con O₂, pero puede fermentar sin él.          concentraciones mucho más bajas que
+                                                                      las de la atmósfera.
+
+Manejo y Velocidad:     Fácil. Crecimiento rápido (tiempo de          Difícil. Crecimiento extremadamente lento
+                        duplicación: 20-30 min). Cultivo              (tiempo de duplicación: 12-24 horas).
+                        estándar.                                     Requiere incubadoras de alta temperatura
+                                                                      y control atmosférico.
+
+---
+
+Ficha Molecular Comparativa
+===========================
+
+                        E. coli (Referencia)                        P. commutabilis (Estudio)
+-------------------------------------------------------------------------------------------------------------------------
+Factor de Regulación:   RpoS (σS)                                   RpoS (σS) (Ortólogo)
+
+Proteína de Control:    RssB (Gen: rssB)                            SWAP1 (Gen: swap1)
+
+Complejo Regulador:     RpoS::RssB::ClpXP                           RpoS::SWAP1
+
+Proteína Asociada:      ClpXP                                       ClpXP (Existe, pero no interactúa)
+
+Explicación:
+- RpoS (o Factor Sigma S): Es una proteína esencial. Es un "director" que se une a la maquinaria de lectura de genes (ARN Polimerasa) y la "guía" para que deje de leer genes de crecimiento y comience a leer genes de estrés, supervivencia y Quorum Sensing.
+- Ortólogo: Significa que es el mismo gen (mismo origen evolutivo y función) en una especie diferente.
+- RssB: Es la proteína "adaptadora" de E. coli. Su trabajo es "agarrar" a RpoS para llevarla a ClpXP para degradar a RpoS.
+- SWAP1: Es la proteína "adaptadora" de P. commutabilis. Cumple una función similar (agarrar a RpoS), pero con un resultado diferente (secuestro).
+- Complejo: Un grupo de proteínas unidas para realizar una tarea. En E. coli, las tres proteínas se unen físicamente. En P. commutabilis, la trituradora ClpXP no forma parte del complejo.
+- ClpXP: Es la "trituradora" molecular de la bacteria. Es una proteasa ATP-dependiente.
+
+---
+
+Ficha de Mecanismo de Acción (Hipótesis Central)
+===============================================
+
+                        Sistema E. coli (Regulación por Degradación)    Sistema P. commutabilis (Regulación por Secuestro)
+-------------------------------------------------------------------------------------------------------------------------
+Mecanismo de "Apagado":  RssB entrega RpoS a ClpXP para su               SWAP1 secuestra a RpoS y lo relocaliza
+                        degradación proteolítica (destrucción           espacialmente (lo "esconde") en el polo
+                        física).                                        celular, lejos del nucleoide. RpoS queda
+                                                                        intacto.
+
+Estado Basal (Sin Estrés): RpoS es activamente degradado. Los genes      RpoS está secuestrado. Los genes de QS
+                        de QS están activos, permitiendo la             están transcripcionalmente reprimidos
+                        formación de Biofilm.                           (apagados), impidiendo la formación de
+                                                                        biofilm.
+
+Respuesta al Estrés:    Lenta (10-15 min). Requiere la síntesis         Rápida (< 60 seg). SWAP1 libera el pool
+                        de novo (creación desde cero) de RpoS.          de RpoS pre-existente y listo para usar.
+
+Ventaja Evolutiva:      Optimizado para ambientes estables (ej. un      Optimizado para ambientes fluctuantes
+                        intestino) donde formar biofilm es clave.       (Cueva de Naica) donde la velocidad de
+                                                                        respuesta y el ahorro de energía son más
+                                                                        importantes que formar biofilm.
+
+---
+
+To-Do List (Materiales y Métodos Actualizados)
+==============================================
+
+Fase 1: Bioinformática y Diseño de Secuencias
+
+    1. Conseguir las Secuencias "Reales" (Control):
+        [ ] Secuencia de Proteína RpoS (de E. coli).
+        [ ] Secuencia de Proteína RssB (de E. coli).
+
+    2. Diseñar tus Secuencias "Inventadas" (Hipótesis):
+        [ ] Diseñar la Proteína SWAP1 (Aminoácidos):
+            - Base: Dominio N-terminal de RssB (Residuos 1-120).
+            - Afinidad: Mutación del residuo vecino al sitio de unión (ej. K25E) para crear doble carga negativa.
+            - Interruptor: Inserción de Serina fosforilable (ej. S26) en la interfaz.
+            - Anclaje: Fusión C-terminal con el dominio de localización polar de DivIVA.
+        [ ] Diseñar el Gen swap1 (Nucleótidos): Optimización de codones para expresión.
+        [ ] Diseñar el Gen rpoS de P. commutabilis: Ortólogo sintético.
+
+Fase 2: Materiales Biológicos y Reactivos
+
+    3. Definir tus Cepas Bacterianas:
+        [ ] Cepa 1: P. commutabilis N-01 (Wild-Type).
+        [ ] Cepa 2: P. commutabilis Δswap1 (Knockout).
+        [ ] Cepa 3: E. coli K-12 (Control).
+        [ ] Cepa 4: P. commutabilis SWAP1-S26A (Mutante del interruptor).
+
+    4. Diseñar tus Plásmidos (Herramientas de ADN):
+        [ ] Plásmido de Expresión: pET28a-SWAP1-His (Para purificar proteína SOLO para SPR).
+
+    5. Definir tus Anticuerpos (Sondas de Detección):
+        [ ] Anti-RpoS Primario (Especie: Conejo).
+        [ ] Anti-SWAP1 Primario (Especie: Ratón - Custom).
+        [ ] Anti-Conejo Secundario (Marcado con Fluoróforo Verde - FITC).
+        [ ] Anti-Ratón Secundario (Marcado con Fluoróforo Rojo - TRITC).
+        [ ] Anti-Fosfoserina (Para Western Blot/MS).
+
+    6. Diseñar tus Primers (Oligonucleótidos):
+        [ ] Primers de Clonación (Para pET28a y Knockout).
+        [ ] Primers de Mutagénesis (para crear Cepa 4).
+
+Fase 3: Generar los "Resultados" (Figuras Inventadas)
+
+    [ ] Figura 1 (Bioinformática): Modelo de AlphaFold de RpoS unido a SWAP1 + Gráfico de energía de Docking (HADDOCK) comparativo vs. Control (E. coli).
+    [ ] Figura 2 (Bioquímica/Biofísica): Gráfico de SPR (Sensorgrama) comparando las curvas de disociación de RpoS-SWAP1 (unión fuerte/lenta) vs. RpoS-RssB (unión débil/rápida).
+    [ ] Figura 3 (Biología Celular): Micrografía de Inmunofluorescencia de P. commutabilis mostrando co-localización de RpoS (Verde) y SWAP1 (Rojo) específicamente en el polo celular.
+    [ ] Figura 4 (Transcriptómica):
+        - Panel A: Gráfico UMAP mostrando clusters separados (E. coli, P. commutabilis WT y P. commutabilis Δswap1).
+        - Panel B: Heatmap mostrando represión de QS en WT y reactivación en Δswap1.
+    [ ] Figura 5 (Fenotipo): Foto de tubos de ensayo (Biofilm). 
+        - Tubo 1: E. coli (Positivo - Anillo fuerte).
+        - Tubo 2: P. commutabilis WT (Negativo - Limpio).
+        - Tubo 3: P. commutabilis Δswap1 (Rescate - Anillo visible).
+    [ ] Figura 6 (Prueba Funcional): Ensayo de Time-Course por Inmunofluorescencia. Serie de fotos a 0s, 30s, 60s comparando la rápida dispersión en P. commutabilis vs. la lenta aparición en E. coli.
+    [ ] Figura 7 (Mecanismo): Espectrometría de Masas mostrando el pico de masa (+80 Da) correspondiente a la fosforilación en S26 bajo estrés.
+    [ ] Figura 8 (Validación): Ensayo Time-Course de la cepa mutante S26A mostrando falla en la liberación de RpoS (permanece secuestrada en el polo).
+
+---
+
+Objetivos del Proyecto
+======================
+
+Objetivo General:
+Caracterizar el mecanismo de regulación espacial mediado por SWAP1 en Punpunyabacter commutabilis (Cepa N-01) y determinar su impacto en la cinética de respuesta al estrés y la conducta social, estableciendo un modelo comparativo con el sistema de degradación de Escherichia coli.
+
+Objetivos Específicos:
+
+1. (Bioinformática - Diseño) Modelar la estructura del complejo SWAP1::RpoS mediante AlphaFold-Multimer y predecir la energía libre de unión mediante Docking Molecular para identificar residuos clave en la interfaz de interacción.
+
+2. (Biofísica - Afinidad) Cuantificar la cinética (kon/koff) y la afinidad (KD) de la interacción SWAP1-RpoS in vitro mediante Resonancia de Plasmones de Superficie (SPR), demostrando una unión de alta estabilidad comparada con el control RssB.
+
+3. (Biología Celular - Mecanismo Espacial) Determinar la co-localización y el secuestro polar de RpoS y SWAP1 en células nativas de P. commutabilis mediante Inmunofluorescencia de doble marcaje.
+
+4. (Transcriptómica - Impacto Global) Definir el regulón controlado por SWAP1 mediante RNA-Seq comparativo (WT vs. Δswap1 vs. E. coli), utilizando análisis de reducción de dimensionalidad (UMAP) para demostrar la represión global de las vías de Quorum Sensing.
+
+5. (Fenotipo - Conducta) Evaluar la capacidad de formación de biofilm en P. commutabilis WT, comparándola con el control positivo E. coli, y demostrar la restauración del fenotipo social en la cepa knockout (Δswap1).
+
+6. (Prueba Funcional - Ventaja Evolutiva) Medir la velocidad de liberación de RpoS ante estrés mediante Inmunofluorescencia en curso temporal (Time-Course), comparando la respuesta inmediata de P. commutabilis frente a la respuesta retardada de E. coli.
+
+7. (Mecanismo - Regulación) Identificar el sitio exacto de fosforilación en SWAP1 inducido por estrés mediante Espectrometría de Masas (MS).
+
+8. (Validación - Causa/Efecto) Confirmar que la fosforilación es el "interruptor" de liberación mediante la caracterización funcional de una cepa con mutagénesis dirigida (ej. SWAP1-S26A), demostrando su incapacidad para liberar RpoS bajo estrés.
